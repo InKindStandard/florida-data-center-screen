@@ -1,5 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="icon" href="favicon.ico">
+<script>/* Color theme: a choice saved on this device ("iks-theme", as on inkindstandard.org) is applied before the page is drawn. */try{var t=localStorage.getItem("iks-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <title>What Florida Counties Can Do About a Large Data Center</title>
 <meta name="description" content="Check whether a Florida county can use the framework's in-kind community benefit provisions, and which other in-kind benefits Florida law allows or blocks.">
 <style>
@@ -3228,7 +3229,12 @@ document.addEventListener("click", e => {
 .sitemast{background:#20234D;color:#FFFFFF;margin:-28px calc(-1*clamp(16px,4vw,40px)) 28px;padding:14px clamp(16px,4vw,40px);border-bottom:1px solid rgba(255,255,255,.3)}
 :root[data-theme="dark"] .sitemast{background:#15173A}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sitemast{background:#15173A}}
-.sitemast-in{max-width:1180px;width:100%;margin:0 auto;display:flex;justify-content:flex-start;text-align:left}
+.sitemast-in{max-width:1180px;width:100%;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;text-align:left}
+.theme{display:inline-flex;gap:2px;padding:3px;border:1px solid rgba(255,255,255,.45);border-radius:999px}
+.theme button{font:700 .84rem var(--sans);color:#D6E0F2;background:none;border:0;border-radius:999px;min-height:2.4rem;padding:0 .85rem;cursor:pointer}
+.theme button:hover{color:#FFFFFF}
+.theme button[aria-pressed="true"]{background:#FFFFFF;color:#20234D}
+.theme button:focus-visible{outline:3px solid #FFD700;outline-offset:2px}
 .sitebrand{display:inline-flex;align-items:center;gap:.8rem;color:#FFFFFF;text-decoration:none}
 .sitebrand svg{width:2.6rem;height:2.6rem;flex:none}
 .sb-name{display:block;font-weight:700;font-size:1.3rem;line-height:1.05;letter-spacing:-.01em}
@@ -3239,4 +3245,24 @@ header.band{position:relative;overflow:hidden;padding-bottom:calc(clamp(22px,3.6
 header.band::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,#FFD700,#FA8300,#DB39A1,#0069E8)}
 @media print{.sitemast{display:none}}
 </style>
+<script>
+/* The color theme switch, the same Light, Dark and Device choice as on inkindstandard.org. Without this script the Screen follows the device. */
+(function(){
+  var root=document.documentElement, KEY="iks-theme", mast=document.querySelector(".sitemast-in");
+  if(!mast) return;
+  function saved(){try{var v=localStorage.getItem(KEY);return v==="light"||v==="dark"?v:"";}catch(e){return "";}}
+  function save(v){try{if(v)localStorage.setItem(KEY,v);else localStorage.removeItem(KEY);}catch(e){}}
+  function apply(v){if(v)root.setAttribute("data-theme",v);else root.removeAttribute("data-theme");}
+  var g=document.createElement("div");
+  g.className="theme"; g.setAttribute("role","group"); g.setAttribute("aria-label","Color theme");
+  [["light","Light"],["dark","Dark"],["","Device"]].forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button"; b.setAttribute("data-theme",o[0]); b.textContent=o[1];
+    b.addEventListener("click",function(){save(o[0]);apply(o[0]);paint();});
+    g.appendChild(b);
+  });
+  function paint(){Array.prototype.forEach.call(g.querySelectorAll("button"),function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-theme")===saved()));});}
+  mast.appendChild(g); paint();
+})();
+</script>
 </body></html>
