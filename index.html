@@ -1,6 +1,10 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="icon" href="favicon.ico">
-<script>/* Color theme: a choice saved on this device ("iks-theme", as on inkindstandard.org) is applied before the page is drawn. */try{var t=localStorage.getItem("iks-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script>/* Color theme: a choice saved on this device ("iks-theme", as on inkindstandard.org) is applied before the page is drawn. A link from inkindstandard.org carries the choice
+   after its # (theme=light, dark or device, joined with & after any place on the page), which browsers never send to either site; it is kept as if pressed here, and the mark is taken off the address. */
+(function(){var h=location.hash,at=h.lastIndexOf("theme="),m=at===1||(at>1&&h.charAt(at-1)==="&")?h.slice(at+6):null,c=m==="light"?"light":m==="dark"?"dark":m==="device"?"":null;
+if(c!==null){try{if(c)localStorage.setItem("iks-theme",c);else localStorage.removeItem("iks-theme")}catch(e){}history.replaceState(null,"",location.pathname+location.search+h.slice(0,at>1?at-1:0))}
+try{var t=localStorage.getItem("iks-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
 <title>What Florida Counties Can Do About a Large Data Center</title>
 <meta name="description" content="Check whether a Florida county can use the framework's in-kind community benefit provisions, and which other in-kind benefits Florida law allows or blocks.">
 <style>
@@ -3273,6 +3277,16 @@ header.band::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;back
   });
   function paint(){Array.prototype.forEach.call(g.querySelectorAll("button"),function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-theme")===saved()));});}
   mast.appendChild(g); paint();
+  /* Carrying the choice to inkindstandard.org: when a link to the site is followed, the choice is written after the link's #. A link with its own # is left as it is. */
+  function carry(ev){
+    var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;
+    if(!a||(a.hostname!=="inkindstandard.org"&&a.hostname!=="www.inkindstandard.org")) return;
+    var h=a.hash,at=h.lastIndexOf("theme=");
+    if(at===1||(at>1&&h.charAt(at-1)==="&")) h=h.slice(0,at>1?at-1:0);
+    a.hash=(h?h.slice(1)+"&":"")+"theme="+(saved()||"device");
+  }
+  document.addEventListener("click",carry,true);
+  document.addEventListener("auxclick",carry,true);
 })();
 </script>
 </body></html>
