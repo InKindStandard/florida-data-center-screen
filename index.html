@@ -1,4 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="icon" href="favicon.ico">
 <title>What Florida Counties Can Do About a Large Data Center</title>
 <meta name="description" content="Check whether a Florida county can use the framework's in-kind community benefit provisions, and which other in-kind benefits Florida law allows or blocks.">
 <style>
@@ -11,32 +12,32 @@
 </style>
 <style>
 :root{
-  --bg:#F2F5FA; --surface:#FFFFFF; --ink:#16294A; --ink2:#3B4F75; --muted:#56658A; --rule:#D5DDEB; --accent:#003763;
-  --band:#003763; --band-ink:#FFFFFF; --band-sub:#D6E0F2; --gold:#FFD700; --pink:#FF007F; --orange:#FF7034;
+  --bg:#F6F5E9; --surface:#FFFFFF; --ink:#20234D; --ink2:#383B66; --muted:#4C4F78; --rule:#DFDCB2; --accent:#20234D;
+  --band:#20234D; --band-ink:#FFFFFF; --band-sub:#D6E0F2; --gold:#FFD700; --pink:#DB39A1; --orange:#FA8300;
   --map-stroke:#FFFFFF; --sel:#FFD700;
-  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#003763; --v-prov-bg:#E1E8F5; --v-cond:#A5461A; --v-cond-bg:#FBE4D6;
-  --v-fail:#9B3F4B; --v-fail-bg:#F9E3E6; --v-na:#5A6784; --v-na-bg:#E7EBF2;
-  --g-open:#809BB1; --g-paused:#FF7034; --g-flux:#FFD700; --g-closed:#FF007F; --g-unchecked:#C9CFD8;
+  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#20234D; --v-prov-bg:#E6E7F2; --v-cond:#A5461A; --v-cond-bg:#FBE4D6;
+  --v-fail:#9B3F4B; --v-fail-bg:#F9E3E6; --v-na:#4C4F78; --v-na-bg:#EEEDE0;
+  --g-open:#8B8FB8; --g-paused:#FA8300; --g-flux:#FFD700; --g-closed:#DB39A1; --g-unchecked:#C9CFD8;
   --sans:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --mono:"Atkinson Hyperlegible Mono",ui-monospace,Consolas,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   color-scheme:dark;
-  --bg:#0E1A30; --surface:#15253F; --ink:#EAF0FA; --ink2:#B9C6DE; --muted:#97A6C4; --rule:#283B5C; --accent:#99AFC1;
-  --band:#003763; --band-ink:#FFFFFF; --band-sub:#C9D6EE; --gold:#FFD700; --pink:#FF4D9E; --orange:#FF7034;
-  --map-stroke:#0E1A30; --sel:#FFD700;
-  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#99AFC1; --v-prov-bg:#1E3358; --v-cond:#FF7034; --v-cond-bg:#3E2517;
-  --v-fail:#F2B8BE; --v-fail-bg:#3F2429; --v-na:#A9B5CC; --v-na-bg:#22324F;
-  --g-open:#3D6A93; --g-paused:#FF7034; --g-flux:#FFD700; --g-closed:#FF007F; --g-unchecked:#56606E;
+  --bg:#20234D; --surface:#262A5A; --ink:#EEF1FA; --ink2:#CDD5EA; --muted:#B4B9DE; --rule:#3A3F78; --accent:#D3DBF2;
+  --band:#15173A; --band-ink:#FFFFFF; --band-sub:#D6E0F2; --gold:#FFD700; --pink:#E869BD; --orange:#FA8300;
+  --map-stroke:#20234D; --sel:#FFD700;
+  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#D3DBF2; --v-prov-bg:#333876; --v-cond:#FA8300; --v-cond-bg:#3E2517;
+  --v-fail:#F2B8BE; --v-fail-bg:#3F2429; --v-na:#B8BCE0; --v-na-bg:#2E3266;
+  --g-open:#5C629F; --g-paused:#FA8300; --g-flux:#FFD700; --g-closed:#DB39A1; --g-unchecked:#56606E;
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#0E1A30; --surface:#15253F; --ink:#EAF0FA; --ink2:#B9C6DE; --muted:#97A6C4; --rule:#283B5C; --accent:#99AFC1;
-  --band:#003763; --band-ink:#FFFFFF; --band-sub:#C9D6EE; --gold:#FFD700; --pink:#FF4D9E; --orange:#FF7034;
-  --map-stroke:#0E1A30; --sel:#FFD700;
-  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#99AFC1; --v-prov-bg:#1E3358; --v-cond:#FF7034; --v-cond-bg:#3E2517;
-  --v-fail:#F2B8BE; --v-fail-bg:#3F2429; --v-na:#A9B5CC; --v-na-bg:#22324F;
-  --g-open:#3D6A93; --g-paused:#FF7034; --g-flux:#FFD700; --g-closed:#FF007F; --g-unchecked:#56606E;
+  --bg:#20234D; --surface:#262A5A; --ink:#EEF1FA; --ink2:#CDD5EA; --muted:#B4B9DE; --rule:#3A3F78; --accent:#D3DBF2;
+  --band:#15173A; --band-ink:#FFFFFF; --band-sub:#D6E0F2; --gold:#FFD700; --pink:#E869BD; --orange:#FA8300;
+  --map-stroke:#20234D; --sel:#FFD700;
+  --v-ok:#3A2C00; --v-ok-bg:#FFD700; --v-prov:#D3DBF2; --v-prov-bg:#333876; --v-cond:#FA8300; --v-cond-bg:#3E2517;
+  --v-fail:#F2B8BE; --v-fail-bg:#3F2429; --v-na:#B8BCE0; --v-na-bg:#2E3266;
+  --g-open:#5C629F; --g-paused:#FA8300; --g-flux:#FFD700; --g-closed:#DB39A1; --g-unchecked:#56606E;
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:clamp(16px,4vw,40px);padding-block:28px 64px}
@@ -99,7 +100,7 @@ aside{display:grid;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px
 .mapcard{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;display:grid;gap:10px;position:relative}
 #map{width:100%;height:auto;display:block}
 #map path{stroke:var(--map-stroke);stroke-width:.9;cursor:pointer}
-#map path.sel{stroke:var(--sel);stroke-width:3;filter:drop-shadow(0 0 1.2px rgba(14,26,48,.95))}
+#map path.sel{stroke:var(--sel);stroke-width:3;filter:drop-shadow(0 0 1.2px rgba(21,23,58,.95))}
 .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink2)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
@@ -236,7 +237,7 @@ details.trade>summary{font-size:14.5px}
 .comm .src{font:500 11px var(--mono);color:var(--muted)}
 .comm .empty{font-size:13.5px;color:var(--muted)}
 #combobar{border:0;cursor:pointer;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--band);color:var(--band-ink);
-  border-radius:999px;padding:10px 18px;font:600 14px var(--sans);text-decoration:none;box-shadow:0 8px 24px rgba(15,28,55,.3);white-space:nowrap;max-width:calc(100vw - 32px)}
+  border-radius:999px;padding:10px 18px;font:600 14px var(--sans);text-decoration:none;box-shadow:0 8px 24px rgba(32,35,77,.3);white-space:nowrap;max-width:calc(100vw - 32px)}
 #combobar b{color:var(--gold)}
 #combobar[hidden]{display:none}
 [hidden]{display:none !important}
@@ -355,6 +356,7 @@ a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid
 .mdpbl{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font:600 14px var(--sans);color:var(--ink);margin:4px 0 10px;cursor:pointer}.mdpbl input{accent-color:var(--accent);width:16px;height:16px;margin:0;align-self:center}.mdpbl .psum{font-weight:400;flex-basis:100%}
 </style>
 
+<header class="sitemast"><div class="sitemast-in"><a class="sitebrand" href="https://inkindstandard.org/"><svg viewBox="497 502 1005 995" aria-hidden="true" focusable="false"><g transform="translate(999.5 999.4)"><path fill="currentColor" d="M62.27 -163.35 L0 -320.97 L-62.27 -163.35 L-8.65 -27.64 L0 -46.18 L8.65 -27.64 Z M159.54 -71.47 L226.96 -226.96 L71.47 -159.54 L13.42 -25.66 L32.65 -32.65 L25.66 -13.42 Z M163.35 62.27 L320.97 0 L163.35 -62.27 L27.64 -8.65 L46.18 0 L27.64 8.65 Z M71.47 159.54 L226.96 226.96 L159.54 71.47 L25.66 13.42 L32.65 32.65 L13.42 25.66 Z M-62.27 163.35 L0 320.97 L62.27 163.35 L8.65 27.64 L0 46.18 L-8.65 27.64 Z M-159.54 71.47 L-226.96 226.96 L-71.47 159.54 L-13.42 25.66 L-32.65 32.65 L-25.66 13.42 Z M-163.35 -62.27 L-320.97 0 L-163.35 62.27 L-27.64 8.65 L-46.18 0 L-27.64 -8.65 Z M-71.47 -159.54 L-226.96 -226.96 L-159.54 -71.47 L-25.66 -13.42 L-32.65 -32.65 L-13.42 -25.66 Z"/><path fill="currentColor" d="M410.49 -42.6 A412.4 442.9 0 0 0 -408.6 -60 L-365.22 -60 A369.4 399.9 0 0 1 367.3 -42.6 Z"/><path fill="currentColor" d="M-375 11.6 L-448.5 -123 L-375 -97.4 L-301.5 -123 Z"/><g transform="rotate(180)"><path fill="currentColor" d="M410.49 -42.6 A412.4 442.9 0 0 0 -408.6 -60 L-365.22 -60 A369.4 399.9 0 0 1 367.3 -42.6 Z"/><path fill="currentColor" d="M-375 11.6 L-448.5 -123 L-375 -97.4 L-301.5 -123 Z"/></g></g></svg><span><span class="sb-name">In-Kind Standard</span> <span class="sb-sub">Model documents and public records</span></span></a></div></header>
 <div class="wrap">
   <div class="pvbanner stale" id="stalebar" hidden></div>
   <header class="band">
@@ -685,7 +687,7 @@ a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid
 header.band .info{color:var(--gold)}
 header.band .info:hover,header.band .info[aria-expanded="true"]{background:var(--gold);color:var(--band);border-color:var(--gold)}
 #lawpop{position:fixed;z-index:50;width:min(360px,calc(100vw - 32px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow-y:auto;background:var(--surface);color:var(--ink);border:1px solid var(--rule);
-  border-top:3px solid var(--band);border-radius:10px;box-shadow:0 10px 30px rgba(15,28,55,.22);padding:14px 16px;font:13px/1.5 var(--sans);display:grid;gap:8px}
+  border-top:3px solid var(--band);border-radius:10px;box-shadow:0 10px 30px rgba(32,35,77,.22);padding:14px 16px;font:13px/1.5 var(--sans);display:grid;gap:8px}
 #lawpop h4{margin:0;font-size:14.5px;line-height:1.25}
 #lawpop .cite{font:500 11.5px var(--mono);color:var(--muted)}
 #lawpop .when{font-size:12px;color:var(--muted)}
@@ -812,7 +814,7 @@ details.flowlist li ul{margin:4px 0 0;padding-left:18px;display:grid;gap:3px}
 .lane::-webkit-scrollbar-thumb:hover,.lanetabs::-webkit-scrollbar-thumb:hover,#flowwrap::-webkit-scrollbar-thumb:hover,.tabs::-webkit-scrollbar-thumb:hover{background:var(--gold);background-clip:padding-box}
 /* ---------- Presenter switch ---------- */
 #pvswitch{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;display:inline-flex;align-items:center;gap:10px;
-  border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 10px 8px 14px;font:600 13.5px var(--sans);cursor:pointer;box-shadow:0 6px 18px rgba(15,28,55,.25)}
+  border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 10px 8px 14px;font:600 13.5px var(--sans);cursor:pointer;box-shadow:0 6px 18px rgba(32,35,77,.25)}
 #pvswitch .knob{width:38px;height:22px;border-radius:999px;background:var(--rule);position:relative;flex:none;transition:background .15s}
 #pvswitch .knob::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.3);transition:left .15s}
 #pvswitch[aria-checked="true"] .knob{background:var(--orange)}
@@ -824,10 +826,10 @@ details.flowlist li ul{margin:4px 0 0;padding-left:18px;display:grid;gap:3px}
 </style>
 <style>
 /* ---- Card polish (11 Oct 2026): depth, verdict edge, hover lift. Visual only. ---- */
-:root{--cs:0 1px 2px rgba(15,28,55,.06),0 4px 14px rgba(15,28,55,.07);--cs-hi:0 2px 4px rgba(15,28,55,.08),0 12px 28px rgba(15,28,55,.13);--edge:rgba(255,255,255,.75);--stripe:var(--rule)}
+:root{--cs:0 1px 2px rgba(32,35,77,.06),0 4px 14px rgba(32,35,77,.07);--cs-hi:0 2px 4px rgba(32,35,77,.08),0 12px 28px rgba(32,35,77,.13);--edge:rgba(255,255,255,.75);--stripe:var(--rule)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--cs:0 1px 2px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.28);--cs-hi:0 2px 6px rgba(0,0,0,.45),0 14px 32px rgba(0,0,0,.4);--edge:rgba(255,255,255,.06)}}
 :root[data-theme="dark"]{--cs:0 1px 2px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.28);--cs-hi:0 2px 6px rgba(0,0,0,.45),0 14px 32px rgba(0,0,0,.4);--edge:rgba(255,255,255,.06)}
-.step,.mapcard,.controls{box-shadow:0 1px 2px rgba(15,28,55,.05)}
+.step,.mapcard,.controls{box-shadow:0 1px 2px rgba(32,35,77,.05)}
 .item{position:relative;border-radius:12px;padding:16px 18px 15px 21px;gap:9px;box-shadow:var(--cs),inset 0 1px 0 var(--edge);transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease}
 .item::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:4px;border-radius:12px 0 0 12px;background:var(--stripe)}
 .item:has(.verdict.v-ok){--stripe:var(--gold)}
@@ -852,22 +854,22 @@ details.flowlist li ul{margin:4px 0 0;padding-left:18px;display:grid;gap:3px}
 <style>
 /* ---- Design pass (19 Oct 2026): Atkinson Hyperlegible throughout, larger type, section tabs, card trays, section menus, foldable Scenarios sections. Visual and navigation only; no content or verdict changes. ---- */
 :root{
-  --tray:#E4EBF5; --card:#FFFFFF; --tab-bg:#003763; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#9AA8C2;
-  --sh-1:0 1px 2px rgba(15,28,55,.06),0 2px 8px -2px rgba(15,28,55,.08);
-  --sh-2:0 1px 1px rgba(15,28,55,.05),0 10px 24px -8px rgba(15,28,55,.22);
-  --sh-3:0 2px 4px rgba(15,28,55,.08),0 18px 36px -10px rgba(15,28,55,.30);
-  --sh-in:inset 0 1px 3px rgba(15,28,55,.10);
+  --tray:#ECEAD0; --card:#FFFFFF; --tab-bg:#20234D; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#7A7DA3;
+  --sh-1:0 1px 2px rgba(32,35,77,.06),0 2px 8px -2px rgba(32,35,77,.08);
+  --sh-2:0 1px 1px rgba(32,35,77,.05),0 10px 24px -8px rgba(32,35,77,.22);
+  --sh-3:0 2px 4px rgba(32,35,77,.08),0 18px 36px -10px rgba(32,35,77,.30);
+  --sh-in:inset 0 1px 3px rgba(32,35,77,.10);
   --navh:64px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --tray:#0A1527; --card:#192A49; --tab-bg:#24467A; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#4A6189;
+  --tray:#181A3C; --card:#2A2E62; --tab-bg:#333876; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#8388C6;
   --sh-1:0 1px 2px rgba(0,0,0,.35),0 2px 10px -2px rgba(0,0,0,.35);
   --sh-2:0 1px 1px rgba(0,0,0,.40),0 12px 26px -8px rgba(0,0,0,.60);
   --sh-3:0 2px 4px rgba(0,0,0,.45),0 20px 40px -10px rgba(0,0,0,.70);
   --sh-in:inset 0 1px 3px rgba(0,0,0,.45);
 }}
 :root[data-theme="dark"]{
-  --tray:#0A1527; --card:#192A49; --tab-bg:#24467A; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#4A6189;
+  --tray:#181A3C; --card:#2A2E62; --tab-bg:#333876; --tab-ink:#FFFFFF; --tab-num:#FFD700; --ctl-line:#8388C6;
   --sh-1:0 1px 2px rgba(0,0,0,.35),0 2px 10px -2px rgba(0,0,0,.35);
   --sh-2:0 1px 1px rgba(0,0,0,.40),0 12px 26px -8px rgba(0,0,0,.60);
   --sh-3:0 2px 4px rgba(0,0,0,.45),0 20px 40px -10px rgba(0,0,0,.70);
@@ -920,7 +922,7 @@ header.band .asof{font-size:14.5px;line-height:1.5}
 .home .hkc{display:none}
 @media (max-width:540px){.homes{gap:10px}.home{display:block;padding:0;background:none;border:0}.home .hk{display:inline;font-size:15px}.home .hk svg{display:inline-block;width:18px;height:18px;vertical-align:-3px;margin-right:7px}.home .hkc{display:inline}.home p{display:inline;font-size:14.5px;line-height:1.5}}
 /* Navigation: larger tabs, a menu of sections under each */
-.tabs{gap:8px;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--rule);box-shadow:0 10px 14px -14px rgba(15,28,55,.55)}
+.tabs{gap:8px;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--rule);box-shadow:0 10px 14px -14px rgba(32,35,77,.55)}
 .tabs button[role="tab"]{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:1 0 auto;font:700 16px/1.2 var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:11px 16px;min-height:46px;box-shadow:var(--sh-1)}
 .tabs button[role="tab"]:hover{background:var(--surface);border-color:color-mix(in srgb,var(--accent) 50%,var(--rule))}
 .tabs button[role="tab"][aria-selected="true"]{background:var(--tab-bg);color:var(--tab-ink);border-color:var(--tab-bg);box-shadow:inset 0 -4px 0 var(--tab-num),var(--sh-2)}
@@ -931,7 +933,7 @@ header.band .asof{font-size:14.5px;line-height:1.5}
   .tabs button[role="tab"]{white-space:normal;flex-wrap:wrap;font-size:14.5px;line-height:1.15;padding:8px 4px;min-height:50px;gap:4px 6px;border-radius:10px}
   .tabs button[role="tab"]:not([aria-selected="true"]) .dd-caret{display:none}
 }
-.navmenu{position:fixed;z-index:60;width:max-content;min-width:250px;max-width:min(380px,calc(100vw - 24px));overflow:auto;overscroll-behavior:contain;display:grid;gap:2px;padding:6px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--tab-num);border-radius:12px;box-shadow:0 22px 44px -12px rgba(15,28,55,.45)}
+.navmenu{position:fixed;z-index:60;width:max-content;min-width:250px;max-width:min(380px,calc(100vw - 24px));overflow:auto;overscroll-behavior:contain;display:grid;gap:2px;padding:6px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--tab-num);border-radius:12px;box-shadow:0 22px 44px -12px rgba(32,35,77,.45)}
 .navmenu .nmh{font:700 12.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:9px 12px 5px}
 .navmenu [role="menuitem"]{display:grid;gap:3px;width:100%;text-align:left;background:transparent;border:0;border-radius:9px;padding:10px 12px;color:var(--ink);font:700 15.5px/1.3 var(--sans);cursor:pointer}
 .navmenu [role="menuitem"] span{font:400 14px/1.4 var(--sans);color:var(--ink2)}
@@ -3221,4 +3223,20 @@ document.addEventListener("click", e => {
 </script>
 
 
+<style>
+/* ---- Site match (24 Nov 2026): the In-Kind Standard masthead and palette B, as on inkindstandard.org. Visual only. ---- */
+.sitemast{background:#20234D;color:#FFFFFF;margin:-28px calc(-1*clamp(16px,4vw,40px)) 28px;padding:14px clamp(16px,4vw,40px);border-bottom:1px solid rgba(255,255,255,.3)}
+:root[data-theme="dark"] .sitemast{background:#15173A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sitemast{background:#15173A}}
+.sitemast-in{max-width:1180px;width:100%;margin:0 auto;display:flex;justify-content:flex-start;text-align:left}
+.sitebrand{display:inline-flex;align-items:center;gap:.8rem;color:#FFFFFF;text-decoration:none}
+.sitebrand svg{width:2.6rem;height:2.6rem;flex:none}
+.sb-name{display:block;font-weight:700;font-size:1.3rem;line-height:1.05;letter-spacing:-.01em}
+.sb-sub{display:block;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin-top:.2rem}
+.sitebrand:hover .sb-name{text-decoration:underline}
+.sitebrand:focus-visible{outline:3px solid #FFD700;outline-offset:4px;border-radius:4px}
+header.band{position:relative;overflow:hidden;padding-bottom:calc(clamp(22px,3.6vw,38px) + 6px)}
+header.band::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,#FFD700,#FA8300,#DB39A1,#0069E8)}
+@media print{.sitemast{display:none}}
+</style>
 </body></html>
